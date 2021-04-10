@@ -1,0 +1,46 @@
+*{
+	padding: 0px;
+	margin: 0px;
+}
+	.onoffswitch {
+    position: relative; 
+    width: 84px;
+    -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
+}
+#myonoffswitch {
+    display: none;
+}
+#hola {
+    display: block; overflow: hidden; cursor: pointer;
+    height: 22px; padding: 0; line-height: 22px;
+    border: 2px solid #999999; border-radius: 22px;
+    background-color: #9E5F5F;
+    transition: background-color 0.3s ease-in;
+}
+#hola:before {
+    content: "";
+    display: block; width: 22px; margin: 0px;
+    background: #A14747;
+    position: absolute; top: 0; bottom: 0;
+    right: 60px;
+    border: 2px solid #999999; border-radius: 22px;
+    transition: all 0.3s ease-in 0s; 
+}
+#hola:before {
+    content: "";
+    display: block; width: 22px; margin: 0px;
+    background: #A14747;
+    position: absolute; top: 0; bottom: 0;
+    right: 60px;
+    border: 2px solid #999999; border-radius: 22px;
+    transition: all 0.3s ease-in 0s; 
+}
+#myonoffswitch:checked + #hola {
+    background-color: #008020;
+}
+#myonoffswitch:checked + #hola, #myonoffswitch:checked + #hola:before {
+   border-color: #008020;
+}
+#myonoffswitch:checked + #hola:before {
+    right: 0px; 
+}
